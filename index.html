@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Store</title>
+    <!-- Tailwind and daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font cdn-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind script file -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                primary: '#6a9739',
+                secondary: '#f8f6f4',
+              },
+              fontFamily: {
+                main_font: 'inter'
+              },
+              backgroundImage:{
+                banner_bg: "url('./images/leaf01.png')",
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-main_font">
+    <header class="">
+        <nav class="bg-white">
+            <div class="navbar py-3 w-11/12 mx-auto">
+                <div class="navbar-start">
+                  <a class="justify-center items-center ">
+                    <img class="w-36" src="./images/logo-nav.svg" alt="">
+                  </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="hover:text-green-600 text-lg font-semibold">Home</a></li>
+                      <li><a class="hover:text-green-600 text-lg font-semibold">Everything</a></li>
+                      <li><a class="hover:text-green-600 text-lg font-semibold">Groceries</a></li>
+                      <li><a class="hover:text-green-600 text-lg font-semibold">About</a></li>
+                      <li><a class="hover:text-green-600 text-lg font-semibold">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="# space-x-3">
+                    <span class="text-lg font-bold text-primary">$10.00</span>
+                    <i class="fa-solid fa-cart-shopping text-lg text-primary"></i>
+                    <i class="fa-solid fa-user text-lg"></i>
+                  </a>
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <i class="fa-solid fa-bars text-lg"></i>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 right-0 shadow">
+                      <li><a class="hover:text-green-400 text-lg font-semibold">Home</a></li>
+                      <li><a class="hover:text-green-400 text-lg font-semibold">Everything</a></li>
+                      <li><a class="hover:text-green-400 text-lg font-semibold">Groceries</a></li>
+                      <li><a class="hover:text-green-400 text-lg font-semibold">About</a></li>
+                      <li><a class="hover:text-green-400 text-lg font-semibold">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </nav>
+
+        <!-- banner section started -->
+        <section class="bg-banner_bg bg-no-repeat bg-right-bottom">
+            <div class="w-full h-full bg-secondary opacity-90">
+                <div class="lg:w-9/12 mx-auto py-20 flex items-center">
+                    <div class="flex-1">
+                        <img src="./images/bannerbg.png" alt="">
+                    </div>
+                    <div class="flex-1 space-y-5">
+                        <h3 class="text-2xl font-bold text-black">Best quality product</h3>
+                        <h2 class="text-6xl font-extrabold text-black">Join the organic movement!</h2>
+                        <p class="text-gray-500 font-semibold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, ut. Ipsa dolorum velit officia quae. Nobis soluta nesciunt fugit accusantium?</p>
+                        <button class="btn bg-primary text-white font-semibold rounded-md px-10">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            shop now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
